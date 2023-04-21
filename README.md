@@ -13,12 +13,17 @@ Data Structure and Functions
 
     For this project you are given the following print_array, and print_list functions:
 
+
+
+
 /**
  * print_array - Prints an array of integers
  *
  * @array: The array to be printed
  * @size: Number of elements in @array
  */
+
+
 void print_array(const int *array, size_t size)
 {
     size_t i;
@@ -41,6 +46,8 @@ void print_array(const int *array, size_t size)
  *
  * @list: The list to be printed
  */
+
+
 void print_list(const listint_t *list)
 {
     int i;
@@ -56,6 +63,8 @@ void print_list(const listint_t *list)
     }
     printf("\n");
 }
+
+
 
     Our files print_array.c and print_list.c (containing the print_array and print_list functions) will be compiled with your functions during the correction.
     Please declare the prototype of the functions print_array and print_list in your sort.h header file
