@@ -13,9 +13,6 @@ Data Structure and Functions
 
     For this project you are given the following print_array, and print_list functions:
 
-#include <stdlib.h>
-#include <stdio.h>
-
 /**
  * print_array - Prints an array of integers
  *
@@ -37,10 +34,9 @@ void print_array(const int *array, size_t size)
     printf("\n");
 }
 
-#include <stdio.h>
-#include "sort.h"
 
-/**
+
+
  * print_list - Prints a list of integers
  *
  * @list: The list to be printed
