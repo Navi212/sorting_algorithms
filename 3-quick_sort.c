@@ -6,8 +6,6 @@
  * @array: array of integers to be sorted
  * @size: size of the array
  *
- * Description: This function implements the Quick Sort
- * algorithm using the Lomuto partition scheme
  * Return: nothing
  */
 void quick_sort(int *array, size_t size)
@@ -27,8 +25,6 @@ void quick_sort(int *array, size_t size)
  * @high: higher boundary
  * @size: size of the array
  *
- * Description: This function implements the Quick Sort
- * algorithm using the Lomuto partition scheme
  * Return: nothing
  */
 void qs(int *array, int low, int high, size_t size)
@@ -51,6 +47,8 @@ void qs(int *array, int low, int high, size_t size)
  * @high: last index of the array
  * @size: size of the array
  *
+ * Description: This function implements the Quick Sort
+ * algorithm using the Lomuto partition scheme
  * Return: Index of the positioned pivot
  */
 int partition(int *array, int low, int high, int size)
