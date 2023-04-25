@@ -31,4 +31,6 @@ size_t a_size(int *array);
 void quick_sort(int *array, size_t size);
 void qs(int *array, int low, int high, size_t size);
 int partition(int *array, int low, int high, int size);
+void shell_sort(int *array, size_t size);
+void s_sort(int *array, int size, int n);
 #endif /* SORT_H */
