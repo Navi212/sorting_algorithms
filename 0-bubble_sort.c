@@ -11,7 +11,7 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
-	int flag;
+	int flag, tmp;
 
 	flag = 0;
 
@@ -27,27 +27,13 @@ void bubble_sort(int *array, size_t size)
 			{
 				if (array[j] > array[j + 1])
 				{
-					swap(array + j, array + j + 1);
+					tmp = array[j];
+					array[j] = array[j + 1];
+					array[j + 1] = tmp;
 					print_array(array, size);
 					flag = 0;
 				}
 			}
 		}
 	}
-}
-
-
-/**
- * swap - swaps 2 numbers
- * @a: first number
- * @b: second number
- *
- * Return: nothing
- */
-void swap(int *a, int *b)
-{
-	int tmp;
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
 }
