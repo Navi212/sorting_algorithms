@@ -1,23 +1,6 @@
 #include "sort.h"
 
 /**
- * swap - swaps 2 numbers
- * @a: first number
- * @b: second number
- *
- * Return: nothing
- */
-void swap(int *a, int *b)
-{
-	int t;
-
-	t = *a;
-	*a = *b;
-	*b = t;
-}
-
-
-/**
  * selection_sort - Sorts an array of integers
  * in ascending order using the Selection Sort
  * algorithm
@@ -29,6 +12,7 @@ void swap(int *a, int *b)
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min;
+	int t;
 
 	for (i = 0; i < size - 1; i++)
 	{
@@ -46,7 +30,9 @@ void selection_sort(int *array, size_t size)
 		}
 		if (min != i)
 		{
-			swap(&array[i], &array[min]);
+			t = array[i];
+			array[i] = array[min];
+			array[min] = t;
 			print_array(array, size);
 		}
 	}
